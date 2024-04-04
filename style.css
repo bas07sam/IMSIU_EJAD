@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+
+body {
+
+    background-image: url("back2.png");
+    background-size: auto 120%;
+    background-repeat: repeat;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    color: #231f20;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    /* إضافة الظل */
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    font-size: 280%;
+    text-align: center; 
+    margin: 0 auto; 
+    color: #45DFD3;
+
+}
+
+
+nav {
+    height: 90px;
+    border-bottom: #0C4E8B;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    background-color: #0C4E8B;
+}
+
+
+#logo {
+    width: 90px;
+    height: 90px;
+}
+
+#join-us {
+    color: #F4EADA;
+    font-size: 1.2em;
+}
+
+#event {
+    text-align: center;
+    padding: 20px;
+}
+
+#event-logo {
+    width: 280px;
+    height: 90px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#event-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2em;
+    color: #0C4E8B;
+}
+
+#welcome {
+    font-size: 1em;
+    text-align: center;
+    padding: 13px;
+    background-color: #0C4E8B;
+    color: #F4EADA;
+}
+
+#start {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #0C4E8B;
+    color: #F4EADA;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#timer {
+    font-size: 1.2em;
+    text-align: center;
+    color: #0C4E8B;
+    background-color: #45DFD3;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 12px;
+}
+
+#quiz {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    margin: 15px;
+    padding: 10px;
+    background-color: #45DFD3;
+    direction: rtl;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#quiz button {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0C4E8B;
+    color: #F4EADA;
+    border: 2px solid black;
+    /* إضافة حدود سوداء بسمك 2 بكسل */
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#quiz button:hover {
+    background-color: #45DFD3;
+    color: #0C4E8B;
+}
+
+#show-incorrect-button {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    /* تغيير العرض إلى نسبة مئوية */
+    height: 50px;
+    margin: 1em auto;
+    /* استخدام em بدلاً من البكسل */
+    background-color: #0C4E8B;
+    color: #F4EADA;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    /* إضافة الظل */
+}
+
+#incorrect-answers {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    font-weight: bold;
+    margin: 1em;
+    /* استخدام em بدلاً من البكسل */
+    padding: 1em;
+    /* استخدام em بدلاً من البكسل */
+    background-color: #45DFD3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    /* إضافة الظل */
+}
+
+#result {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    background-color: #0C4E8B;
+    color: #F4EADA;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#footer {
+    text-align: center;
+    font-size: 10%;
+    padding: 7px;
+    background-color: #0C4E8B;
+    color: #F4EADA;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* الأنماط المحددة للأجهزة المحمولة */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 350%;
+        text-align: center; 
+        margin: 0 auto; 
+        color: #45DFD3;
+    }
+
+
+    #quiz button {
+        width: 100%;
+        align-items: center;
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    #event-name {
+        font-size: 1.5em;
+    }
+
+    #event-logo {
+        width: 200px;
+        height: 60px;
+    }
+
+    #start {
+        width: 150px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    #timer {
+        font-size: 1em;
+    }
+
+    #result {
+        font-size: 1.2em;
+    }
+
+    #footer {
+        font-size: 8%;
+    }
+
+
+    a {
+        font-size: 55%;
+
+    }
+
+    nav {
+        height: 60px;
+        font-size: 40%;
+        display: flex;
+        align-items: center;
+        text-align: center; 
+        margin: 0 auto; 
+        color: #45DFD3;
+    }
+
+    #logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    #join-us {
+        font-size: 1em;
+    }
+
+    #event {
+        padding: 15px;
+    }
+
+    #welcome {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+
+    #quiz {
+        margin: 15px;
+        padding: 12px;
+    }
+
+    #show-incorrect-button {
+        width: 70%;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    #incorrect-answers {
+        margin: 0.8em;
+        padding: 0.8em;
+    }
+}
+
+nav,
+#quiz button,
+#quiz,
+button,
+#timer,
+#start,
+#show-incorrect-button,
+#welcome,
+#result {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
